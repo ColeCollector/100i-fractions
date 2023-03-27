@@ -11,14 +11,13 @@ def lowestTerms(numerator,denominator):
 
     for i in range(1,60):
         if numerator%i == 0 and denominator%i == 0:
-            numerator = numerator/i
-            denominator = denominator/i
+            numer = numerator/i
+            denom = denominator/i
             
 
-    answer = (numerator, denominator)
+    answer = (numer, denom)
     print(answer)
     return answer
-
 
 
 def main():

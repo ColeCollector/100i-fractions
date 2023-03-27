@@ -5,21 +5,22 @@
 # denominator in lowest terms
 def sum(n1,d1,n2,d2):
 
-    n1 = n1 *d2
-    n2 = n1 *d1
+    numer1 = n1*d2
+    numer2 = n2*d1
 
-    d1 = d1*d2
-    d2 = d1*d2
+    denom1 = d1*d2
+    denom2 = d1*d2
 
-    numerator = n1+n2
-    denominator = d1
+    numerator = numer1+numer2
+    denominator = denom1
 
-    for i in range(1,60):
+    for i in range(1,20):
         if numerator%i == 0 and denominator%i == 0:
-            numerator = numerator/i
-            denominator = denominator/i
+            numer = numerator/i
+            denom = denominator/i
 
-    answer = (n1,d1,n2,d2)
+    answer = (numer, denom)
+    print(answer)
     return answer
 
 
