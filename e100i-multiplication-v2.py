@@ -8,6 +8,11 @@ def product(f1,f2):
         # a tuple with length 2 is a numerator/denominator 
         # a tuple with length 3 is a whole number/numerator/denominator
     # f2 is the same as 1
+    print(len(f1))
+    
+
+    
+
     
     return
 

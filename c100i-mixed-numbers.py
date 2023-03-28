@@ -4,11 +4,12 @@
 # convert improper fractions to mixed numbers of type a + b/c
 
 def toImproper(a,b,c):
-    numer = (a*b) + b
+    numer = (a*c) + b
     deno = c
 
-    print(numer, deno)
-    return (numer,deno)
+    answer = (numer, deno)
+    print(answer)
+    return answer
 
     # a : whole number
     # b : numerator
@@ -16,14 +17,16 @@ def toImproper(a,b,c):
 
 
 def toMixed(num,den):
-    whole = num/den
-    whole = int(whole)
-    numer = 
-
+    a = num/den
+    a = int(a)
+    b = num - (a*den)
+    c = den
     #num: numerator
     #den: denominator
     # return a: whole number, b: numerator, c: denominator
-    return (whole,numer,den)
+    answer = (a,b,c)
+    print(answer)
+    return answer
 
 if __name__ == "__main__":
     assert toMixed(10,3) == (3,1,3)

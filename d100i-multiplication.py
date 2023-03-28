@@ -6,8 +6,11 @@
 def product(n1,d1,n2,d2):
     # n1: numerator of first factor
     # d1: denominator of first factor
-    
-    return
+    den = d1*d2
+    num = n1*n2
+    answer = (num,den)
+    print(answer)
+    return answer
 
 if __name__ == "__main__":
     assert product(3,4,1,2) == (3,8)
