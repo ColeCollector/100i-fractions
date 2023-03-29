@@ -6,8 +6,7 @@
 # the fraction in lowest terms
 
 def lowestTerms(numerator,denominator):
-    print(numerator)
-    print(denominator)
+
 
     for i in range(1,60):
         if numerator%i == 0 and denominator%i == 0:
